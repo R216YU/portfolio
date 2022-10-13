@@ -187,6 +187,7 @@ img {
 
     /* PROFILE */
     #profile {
+        display: flex;
         flex-direction: column;
     }
 
