@@ -96,7 +96,7 @@ img {
     font-weight: normal;
     letter-spacing: 0.02em;
     padding: .5rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 .profile-info h3::after {
     display: block;
@@ -167,13 +167,6 @@ img {
     text-align: right;
     padding: 5rem 0;
 }
-
-
-
-
-
-
-
 
 
 
