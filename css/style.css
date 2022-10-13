@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+body {
+    font-family: 'Noto Sans JP', sans-serif; /* font-family: 'Poppins', sans-serif; */
+    color: #F0F2EF;
+    background-color: #151413;
+    line-height: 1.7;
+    padding: 4%;
+}
+ul {
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #AFD5AA;
+}
+img {
+    max-width: 100%;
+}
+
+/* WALLPAPER */
+
+
+/* HEADER */
+.header-title {
+    font-family: 'Poppins', sans-serif;
+    color: #F0F2EF;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.header-title a {
+    color: #F0F2EF;
+}
+.header-menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4%;
+    font-size: 1.1rem;
+}
+.header-menu a::after {
+	content: '';
+	width: 0;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid #F0F2EF;
+	display: block;
+}
+.header-menu a:hover::after {
+    width: 100%;
+    border-bottom: 2px solid #F0F2EF;
+}
+
+/* SECTION共通 */
+#main {
+    margin-top: 10%;
+}
+#profile,
+#works,
+#contact {
+    margin-bottom: 15%;
+}
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    color: #F0F2EF;
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+/* PROFILE */
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.profile-info h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    padding: .5rem;
+    margin-top: 3rem;
+}
+.profile-info h3::after {
+    display: block;
+    content: "Amateur Engineer";
+    text-align: center;
+    font-size: 1rem;
+    border-top: 1px solid #F0F2EF;
+    opacity: .5;
+}
+
+/* WORKS */
+#works .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 4rem;
+}
+.grid-item p {
+    text-align: center;
+}
+.grid-item img:hover {
+    margin: -2px;
+    border: 2px solid #AFD5AA;
+}
+
+/* CONTACT */
+
+#contact p {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+#contact p a {
+    color: #F0F2EF;
+    border-bottom: 2px solid #AFD5AA;
+}
+#contact p a:hover {
+    color: #AFD5AA;
+}
+.sns-box {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.fa-brands {
+    font-size: 2.5rem;
+}
+.fa-twitter {
+    color: #F0F2EF;
+}
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+.fa-instagram {
+    color: #F0F2EF;
+}
+.fa-instagram:hover {
+    color: #C13584;
+}
+.fa-github {
+    color: #F0F2EF;
+}
+.fa-github:hover {
+    color: #6e5494;
+}
+
+/* FOOTER */
+#footer {
+    text-align: right;
+    padding: 5rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    /* HEADER */
+    .header-title {
+        font-size: 2rem;
+    }
+
+    /* SECTION共通 */
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    /* CONTACT */
+    .fa-brands {
+        font-size: 1.5rem;
+    }
+}
