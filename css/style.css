@@ -26,6 +26,9 @@ img {
 
 
 /* HEADER */
+#header {
+    margin-top: 3rem;
+}
 .header-title {
     font-family: 'Poppins', sans-serif;
     color: #F0F2EF;
@@ -183,13 +186,6 @@ img {
     /* SECTION共通 */
     .section-title {
         font-size: 1.5rem;
-    }
-
-    /* PROFILE */
-    #profile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 
     /* CONTACT */
