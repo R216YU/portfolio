@@ -84,11 +84,15 @@ img {
     justify-content: center;
     gap: 4rem;
 }
-.profile-img {
+.profile-img img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 5%;
+}
+.profile-info {
+    display: flex;
+    align-items: center;
 }
 .profile-info h3 {
     font-family: 'Poppins', sans-serif;
@@ -96,7 +100,6 @@ img {
     font-weight: normal;
     letter-spacing: 0.02em;
     padding: .5rem;
-    margin-top: 2rem;
     text-align: center;
 }
 .profile-info h3::after {
